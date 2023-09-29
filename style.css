@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #081b29;
+}
+
+.container {
+    position: relative;
+    width: 750px;
+    height: 450px;
+    background: transparent;
+    border: 2px solid #0ef;
+
+}
+
+.login-form {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.login {
+    left: 0;
+    padding: 0 40px;
+}
+
+h2 {
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 25px 0;
+}
+
+input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #fff;
+    transition: 0.5s;
+}
+
+input:focus {
+    border-bottom-color: #0ef;
+}
+
+label {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+input:focus~label {
+    top: -5px;
+    color: #0ef;
+}
+
+i {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #fff;
+}
+
+.btn {
+    position: relative;
+    width: 100%;
+    height: 45px;
+    background: transparent;
+    border: 2px solid #0ef;
+    border-radius: 40px;
+    cursor: pointer;
+    outline: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.reg-link {
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    margin: 20px 0 10px;
+}
+
+.reg-link p a {
+    text-decoration: none;
+    margin-left: 5px;
+    color: #0ef;
+    font-weight: 600;
+}
