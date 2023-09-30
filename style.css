@@ -18,7 +18,8 @@ body {
     height: 450px;
     background: transparent;
     border: 2px solid #0ef;
-
+    box-shadow: 0 0 25px #0ef;
+    overflow: hidden;
 }
 
 .login-form {
@@ -33,7 +34,8 @@ body {
 
 .login {
     left: 0;
-    padding: 0 40px;
+    padding: 0 60px 0 40px;
+    display: none;
 }
 
 h2 {
@@ -157,6 +159,7 @@ input:focus~i {
     right: 0;
     text-align: right;
     padding: 0 40px 60px 150px;
+    display: none;
 }
 
 h3 {
@@ -169,4 +172,34 @@ h3 {
 .side-text p {
     color: #fff;
     font-size: 20px;
+}
+
+.bg-animate {
+    position: absolute;
+    top: -4px;
+    right: 0;
+    width: 850px;
+    height: 600px;
+    border-bottom: 3px solid #0ef;
+    background: linear-gradient(45deg, #081b29, #0ef);
+    transform: rotate(0) skewY(0);
+    /* transform: rotate(10deg) skewY(40deg); */
+    transform-origin: bottom right;
+}
+
+.bg-animate2 {
+    position: absolute;
+    top: 100%;
+    left: 250px;
+    width: 850px;
+    height: 700px;
+    border-top: 3px solid #0ef;
+    background: #081b29;
+    transform: rotate(-11deg) skewY(-41deg);
+    transform-origin: bottom left;
+}
+
+.register {
+    right: 0;
+    padding: 0 40px 0 60px;
 }
