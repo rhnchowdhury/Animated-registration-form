@@ -5,3 +5,7 @@ let logLink = document.querySelector('.login-link');
 regLink.addEventListener('click', () => {
     clickLink.classList.add('active');
 });
+
+logLink.addEventListener('click', () => {
+    clickLink.classList.remove('active');
+});

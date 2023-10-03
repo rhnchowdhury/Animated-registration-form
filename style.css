@@ -180,9 +180,15 @@ h3 {
     height: 600px;
     border-bottom: 3px solid #0ef;
     background: linear-gradient(45deg, #081b29, #0ef);
-    /* transform: rotate(0) skewY(0); */
     transform: rotate(10deg) skewY(40deg);
     transform-origin: bottom right;
+    transition: 1.5s ease;
+    transition-delay: 1.6s;
+}
+
+.active .bg-animate {
+    transform: rotate(0) skewY(0);
+    transition-delay: .3s;
 }
 
 .bg-animate2 {
@@ -194,28 +200,68 @@ h3 {
     border-top: 3px solid #0ef;
     background: #081b29;
     transform: rotate(0) skewY(0);
-    /* transform: rotate(-11deg) skewY(-41deg); */
     transform-origin: bottom left;
+    transition: 1.5s ease;
+    transition-delay: .5s;
+}
+
+.active .bg-animate2 {
+    transform: rotate(-11deg) skewY(-41deg);
+    transition-delay: 1.1s;
 }
 
 .register {
     right: 0;
     padding: 0 40px 0 60px;
-    display: none;
 }
 
 .sign-div {
     left: 0;
     text-align: left;
     padding: 0 150px 60px 40px;
-    display: none;
+    pointer-events: none;
 }
 
-/* .animation {
+.animation {
     transform: translateX(0);
     transition: .7s ease;
+    transition-delay: calc(.1s * var(--j));
 }
 
 .container.active .animation {
     transform: translateX(-120%);
-} */
+    transition-delay: calc(.1s * var(--i));
+}
+
+.side-text .animation {
+    transform: translateX(0);
+    transition: .7s ease;
+    transition-delay: calc(.1s * var(--j));
+}
+
+.container.active .side-text .animation {
+    transform: translateX(120%);
+    transition-delay: calc(.1s * var(--i));
+}
+
+.animation2 {
+    transform: translateX(120%);
+    transition: .7s ease;
+    transition-delay: calc(.1s * var(--j));
+}
+
+.active .animation2 {
+    transform: translateX(0);
+    transition-delay: calc(.1s * var(--i));
+}
+
+.side-text .animation2 {
+    transform: translateX(-130%);
+    transition: .7s ease;
+    transition-delay: calc(.1s * var(--j));
+}
+
+.active .side-text .animation2 {
+    transform: translateX(0);
+    transition-delay: calc(.1s * var(--i));
+}
