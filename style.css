@@ -210,3 +210,12 @@ h3 {
     padding: 0 150px 60px 40px;
     display: none;
 }
+
+/* .animation {
+    transform: translateX(0);
+    transition: .7s ease;
+}
+
+.container.active .animation {
+    transform: translateX(-120%);
+} */
